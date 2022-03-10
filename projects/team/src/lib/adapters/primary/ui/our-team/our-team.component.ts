@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 import { of } from 'rxjs';
 import { FormGroup, FormControl } from '@angular/forms';
+import { EmployeeDTO } from 'projects/team/src/lib/application/ports/secondary/employee.dto';
 
 @Component({
     selector: 'lib-our-team',
@@ -16,6 +17,7 @@ export class OurTeamComponent {
             name: 'Adam Wieczorek',
             jobPosition: 'Główny programista',
             description: 'Spełniony programista, chetny na nowe wyzwania. Wolnym czasie od pracy uprawia sport.'
+            
         },
         {
             src: 'https://student.studentka.pl/img/wo/2/88/mezczyzna-obrazek_sredni_4025288.jpg',

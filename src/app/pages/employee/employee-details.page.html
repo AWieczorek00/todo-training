@@ -1,1 +1,16 @@
-<h1>{{(param$ | async)?.name}}</h1>
+<div class="position-relative">
+    <div class="mx-auto" style="width: 200px;">
+        <div class="col" *ngFor="let employee of employees | async">
+            <div class="card" style="width: 18rem;" *ngIf="(param$ | async)?.name === employee.name ">
+                <img [src]="employee.src" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title"><a style="text-decoration: none;"
+                            href="pracownik/{{employee.name}}">{{employee.name}}</a></h5>
+                    <p class="card-text"><strong>{{employee.jobPosition}}</strong><br>
+                        {{employee.description}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
