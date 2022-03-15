@@ -1,0 +1,44 @@
+<!-- <form (ngSubmit)="Contact(contact)" [formGroup]="contact">
+    <div class="row g-3 align-items-center">
+        <div class="col-3">
+            <label class="form-label">Twoje imię</label>
+            <input type="text" formControlName="name" placeholder="Name" class="form-control">
+        </div>
+    </div>
+   <div class="row g-3 align-items-center">
+        <div class="col-3">
+            <label class="form-label">Twoje Email</label>
+            <input type="text" formControlName="eMail" placeholder="E-Mail" class="form-control">
+        </div>
+    </div>
+    <div class="row g-3 align-items-center">
+        <div class="col-5">
+            <label class="form-label">Twoje Email</label>
+            <input  type="text" formControlName="text" placeholder="Text" class="form-control"> 
+            <textarea class="form-control" type="text" formControlName="text" placeholder="Text"></textarea>
+        </div>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary">
+</form> -->
+
+<form [formGroup]="contact" (ngSubmit)="Contact(contact)">
+    <div class="row g-3 align-items-center">
+        <div class="col-3">
+            <label class="form-label">Twoje imię</label>
+            <input type="text" formControlName="name" placeholder="Name" class="form-control">
+        </div>
+    </div>
+    <div class="row g-3 align-items-center">
+        <div class="col-3">
+            <label class="form-label">Twoje Email</label>
+            <input type="text" formControlName="email" placeholder="Email" class="form-control">
+        </div>
+    </div>
+    <div class="row g-3 align-items-center">
+        <div class="col-5">
+            <label class="form-label">Wiadomość</label>
+            <textarea class="form-control" type="text" formControlName="text" placeholder="Text"></textarea>
+        </div>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary">
+</form>

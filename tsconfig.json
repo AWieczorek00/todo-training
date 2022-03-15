@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -20,6 +19,13 @@
       "team": [
         "dist/team/team",
         "dist/team"
+      ],
+      "contac2": [
+        "dist/contac2/contac2",
+        "dist/contac2"
+      ],
+      "@contact": [
+        "projects/contact/src/index.ts"
       ]
     }
   },
