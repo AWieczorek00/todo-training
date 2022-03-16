@@ -5,11 +5,16 @@
       <div class="card" style="width: 18rem;">
         <img [src]="employee.image" class="card-img-top">
         <div class="card-body">
-          <h5  class="card-title nav-link"><a style="text-decoration: none;" routerLink="/pracownik/{{employee.name}}">{{employee.name}}</a></h5>
+          <h5 class="card-title nav-link"><a style="text-decoration: none;"
+              routerLink="/pracownik/{{employee.name}}">{{employee.name}}</a></h5>
           <p class="card-text"><strong>{{employee.jobPosition}}</strong><br>
-            <strong>Odział {{employee.department.name}}</strong><br>
-          {{employee.description}}  
+            <!-- <strong>Odział {{employee.department.name}}</strong><br> -->
+            {{employee.description}}<br>
           </p>
+          <div *ngIf="employee.education!=null">
+            <strong>Osiągniecia </strong><br>
+            {{employee.education}}
+          </div>
         </div>
       </div>
     </div>

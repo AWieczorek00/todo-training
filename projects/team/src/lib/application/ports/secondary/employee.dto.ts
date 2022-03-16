@@ -6,5 +6,5 @@ export interface EmployeeDTO {
   readonly jobPosition: string;
   readonly description: string;
   readonly education?: string;
-  readonly department: DepartmentDTO;
+  readonly department?: DepartmentDTO;
 }
