@@ -1,12 +1,13 @@
 <h1 class="mx-auto" style="width: 200px;">Nasz team</h1>
 <div class="container ">
   <div class="row">
-    <div class="col" *ngFor="let employee of employees | async">
+    <div class="col" *ngFor="let employee of employees$ | async">
       <div class="card" style="width: 18rem;">
-        <img [src]="employee.src" class="card-img-top">
+        <img [src]="employee.image" class="card-img-top">
         <div class="card-body">
           <h5  class="card-title nav-link"><a style="text-decoration: none;" routerLink="/pracownik/{{employee.name}}">{{employee.name}}</a></h5>
           <p class="card-text"><strong>{{employee.jobPosition}}</strong><br>
+            <strong>Odział {{employee.department.name}}</strong><br>
           {{employee.description}}  
           </p>
         </div>
