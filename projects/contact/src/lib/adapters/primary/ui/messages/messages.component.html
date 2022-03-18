@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nazwa</th>
+        <th scope="col">E-Mail</th>
+        <th scope="col">Wiadomość</th>
+        <th scope="col">Data wysłania</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of list$ | async">
+      <tr>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.text}}</td>
+        <td>{{item.sendTime}}</td>
+      </tr>
+    </tbody>
+  </table>
