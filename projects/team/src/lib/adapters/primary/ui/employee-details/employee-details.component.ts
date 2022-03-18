@@ -6,8 +6,9 @@ import { GETS_ALL_EMPLOYEE_DTO, GetsAllEmployeeDtoPort } from '../../../../appli
 
 @Component({ selector: 'lib-employee-details', templateUrl: './employee-details.component.html', encapsulation: ViewEncapsulation.None, changeDetection: ChangeDetectionStrategy.OnPush })
 export class EmployeeDetailsComponent {
-    param$ = this.activatedRoute.params;
+  param$ = this.activatedRoute.params;
   employees$: Observable<EmployeeDTO[]> = this._getsAllEmployeeDto.getAll();
 
-    constructor(private activatedRoute: ActivatedRoute, @Inject(GETS_ALL_EMPLOYEE_DTO) private _getsAllEmployeeDto: GetsAllEmployeeDtoPort) { }
+  constructor(private activatedRoute: ActivatedRoute,
+    @Inject(GETS_ALL_EMPLOYEE_DTO) private _getsAllEmployeeDto: GetsAllEmployeeDtoPort) { }
 }

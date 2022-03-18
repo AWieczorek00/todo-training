@@ -6,6 +6,7 @@ import { HomePageModule } from './pages/home/home.page-module';
 import { EmployeePageModule } from './pages/employee/employee.page-module';
 import { EmployeeDetailsPageModule } from './pages/employee/employee-details.page-module';
 import { ContactPageModule } from './pages/contact/contact.page-module';
+import { AdminPageModule } from './pages/admin/admin.page-module';
 
 const routes: Routes = [{ 
         path: 'omnie', 
@@ -34,6 +35,10 @@ const routes: Routes = [{
   { 
         path: 'kontakt', 
         loadChildren: () => ContactPageModule
+      },
+  { 
+        path: 'admin', 
+        loadChildren: () => AdminPageModule
       }
 ];
 
