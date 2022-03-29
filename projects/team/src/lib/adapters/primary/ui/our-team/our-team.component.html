@@ -6,7 +6,7 @@
         <img [src]="employee.image" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title nav-link"><a style="text-decoration: none;"
-              routerLink="/pracownik/{{employee.id}}" (click)="onEmployeeClicked(employee)">{{employee.name}}</a></h5>
+              routerLink="/pracownik/{{employee.id}}">{{employee.name}}</a></h5>
           <p class="card-text"><strong>{{employee.jobPosition}}</strong><br>
             <strong>Troche o mnie</strong><br>
             {{employee.description}}<br>
