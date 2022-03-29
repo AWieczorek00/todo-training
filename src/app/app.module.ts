@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponentModule } from 'projects/navigation/src';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
+import { InMemoryContextStorageModule } from 'projects/team/src/lib/adapters/secondary/infrastructure/in-memory-context.storage-module';
 
 
 
@@ -20,7 +21,8 @@ import { environment } from 'src/environments/environment';
     AppRoutingModule,
     RouterModule,
     NavbarComponentModule,
-    AngularFireModule.initializeApp(environment.firestoreConfig)
+    AngularFireModule.initializeApp(environment.firestoreConfig),
+    InMemoryContextStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
